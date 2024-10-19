@@ -26,7 +26,8 @@
             }
     </th>
         <th>Department Name</th>
-        <th>Appointment Date and Time</th>
+        <th>Appointment Date </th>
+         <th>Appointment Time</th>
         <th>Appointment Status</th>
 
     </thead>
@@ -52,8 +53,22 @@
 
 
                 <td>@item.Department.Name</td>
-                <td>@item.AppointmentDateTime.ToString("g")</td>
+                <td>@item.AppointmentDateTime.ToString("d")</td>
+                <td>@item.AppointmentDateTime.ToString("t")</td>
+
                 <td>@item.Status</td>
+                <td>
+                    @if (item.Staff?.User != null)//viewer is a patient
+                    {
+
+                        <a class="btn btn-primary" asp-action="GetAppointmentById" asp-controller="Appointment" asp-route-id="@item.Id">View Appointment</a>
+
+                    }
+                    else
+                    {
+                      
+                    }
+                </td>
             
             </tr>
          

@@ -37,6 +37,7 @@ namespace HospitalManagementSystem2.Controllers
         }
 
         //Appointment/GetAppointmentsById/
+        
         public IActionResult GetAppointmentById(int Id)
         {
 
