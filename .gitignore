@@ -40,9 +40,6 @@ artifacts/
 **/[Pp]ackages/*
 !**/[Pp]ackages/build/
 
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
-
 # StyleCop
 StyleCopReport.xml
 
