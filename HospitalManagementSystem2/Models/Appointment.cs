@@ -14,6 +14,8 @@ public partial class Appointment
 
     public int StaffId { get; set; }
 
+    public int DepartmentId { get; set; }
+
     public DateTime AppointmentDateTime { get; set; }
 
     public string Status { get; set; }
@@ -23,5 +25,7 @@ public partial class Appointment
     public virtual Patient Patient { get; set; }
 
     public virtual Staff Staff { get; set; }
+
+    public virtual Department Department { get; set; }
 
 }

@@ -4045,11 +4045,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lobna\\source\\repos\\HospitalManagementSystem2\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
+      "projectUniqueName": "C:\\Users\\Lobna\\source\\repos\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
       "projectName": "HospitalManagementSystem2",
-      "projectPath": "C:\\Users\\Lobna\\source\\repos\\HospitalManagementSystem2\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
+      "projectPath": "C:\\Users\\Lobna\\source\\repos\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
       "packagesPath": "C:\\Users\\Lobna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lobna\\source\\repos\\HospitalManagementSystem2\\HospitalManagementSystem2\\obj\\",
+      "outputPath": "C:\\Users\\Lobna\\source\\repos\\Hospital-Management-System-\\HospitalManagementSystem2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lobna\\AppData\\Roaming\\NuGet\\NuGet.Config",

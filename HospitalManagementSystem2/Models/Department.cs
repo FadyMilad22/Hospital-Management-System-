@@ -16,4 +16,6 @@ public partial class Department
 
 
     public virtual ICollection<Staff> Staff { get; set; } = new List<Staff>();
+
+    public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 }
