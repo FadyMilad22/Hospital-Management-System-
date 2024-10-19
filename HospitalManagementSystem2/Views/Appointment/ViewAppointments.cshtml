@@ -1,0 +1,34 @@
+﻿@model List<Appointment>
+<h1 class="text-center" style="color:rgb(24 187 155)">All Appointments</h1>
+
+<table class="table table-bordered table-hover table-primary table-striped">
+
+    <thead>
+        <th>Doctor Name</th>
+        <!--3yza afaker feeha law a3ml if condition bhees el view de ystakhdemha el doctor wa el patient-->
+        <th>Department Name</th>
+        <th>Appointment Date and Time</th>
+    <th>Appointment Status</th>
+
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+
+
+                <td>@item.Staff.User.Name</td>
+                <td>@item.Department.Name</td>
+                <td>@item.AppointmentDateTime</td>
+                <td>@item.Status</td>
+            
+            </tr>
+         
+
+        }
+    </tbody>
+
+
+
+
+</table>

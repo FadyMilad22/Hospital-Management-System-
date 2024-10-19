@@ -1,20 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HospitalManagementSystem2.Models;
+using HospitalManagementSystem2.Repository.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalManagementSystem2.Controllers
 {
     public class AppointmentController : Controller
     {
-        /*
-         •	Get appointments by patient 
-•	Get appointments by doctor. 
-•	Check availability of appointment
-•	 get available appointments time slots.
+        IAppointmentRepository appointmentRepository;
 
-         */
-        //patientid 
-        public IActionResult GetAppointmentsByPatient()
+        public AppointmentController(IAppointmentRepository _appointmnetrepo)
         {
-            return View();
+           appointmentRepository= _appointmnetrepo;
+        }
+        //Appointment/Test
+        public IActionResult Test() { 
+          return View();
+        }
+
+        //Appointment/GetAppointmentsByPatient/id
+        public IActionResult GetAppointmentsByPatient(int Id)
+        {
+            
+            List <Appointment> appointments=appointmentRepository.GetAllByPatient(Id);
+
+            return View("ViewAppointments",appointments);
         }
     }
 }
