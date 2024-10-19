@@ -7,6 +7,11 @@ namespace HospitalManagementSystem2.Models
 {
     public class HospitalContext : DbContext
     {
+        public HospitalContext(DbContextOptions <HospitalContext> options):base(options) 
+        {
+            
+        }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

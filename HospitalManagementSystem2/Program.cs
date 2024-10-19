@@ -1,3 +1,4 @@
+using HospitalManagementSystem2.Models;
 using HospitalManagementSystem2.Repository;
 using HospitalManagementSystem2.Repository.Interfaces;
 
@@ -12,6 +13,10 @@ namespace HospitalManagementSystem2
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddDbContext<HospitalContext>(options =>
+            {
+                builder.Configuration.GetConnectionString("cs");
+            });
             builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 
             var app = builder.Build();

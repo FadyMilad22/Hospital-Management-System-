@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Lobna\source\repos\Hospital-Management-System-\HospitalManagementSystem2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/SpecificAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcU3BlY2lmaWNBcHBvaW50bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/Test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVGVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

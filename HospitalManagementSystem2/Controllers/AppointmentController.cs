@@ -1,5 +1,6 @@
 ﻿using HospitalManagementSystem2.Models;
 using HospitalManagementSystem2.Repository.Interfaces;
+using HospitalManagementSystem2.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalManagementSystem2.Controllers
@@ -17,13 +18,32 @@ namespace HospitalManagementSystem2.Controllers
           return View();
         }
 
-        //Appointment/GetAppointmentsByPatient/id
-        public IActionResult GetAppointmentsByPatient(int Id)
+        //Appointment/GetAppointmentsByPatient?PatientId=
+        public IActionResult GetAppointmentsByPatient(int PatientId)
         {
             
-            List <Appointment> appointments=appointmentRepository.GetAllByPatient(Id);
+            List <Appointment> appointments=appointmentRepository.GetAllByPatient(PatientId);
 
             return View("ViewAppointments",appointments);
         }
+
+        //Appointment/GetAppointmentsByDoctor?StaffId=
+        public IActionResult GetAppointmentsByDoctor(int StaffId)
+        {
+
+            List<Appointment> appointments = appointmentRepository.GetAllByDoctor(StaffId);
+
+            return View("ViewAppointments", appointments);
+        }
+
+        //Appointment/GetAppointmentsById/
+        public IActionResult GetAppointmentById(int Id)
+        {
+
+            Appointment appointment = appointmentRepository.GetById(Id);
+
+            return View("SpecificAppointment", appointment);
+        }
+
     }
 }
