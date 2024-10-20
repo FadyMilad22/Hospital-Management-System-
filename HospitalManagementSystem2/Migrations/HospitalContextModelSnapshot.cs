@@ -167,17 +167,17 @@ namespace HospitalManagementSystem2.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("DayOfWeek")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<TimeOnly>("AvailableFrom")
+                        .HasColumnType("time");
+
+                    b.Property<TimeOnly>("AvailableTo")
+                        .HasColumnType("time");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
-
-                    b.Property<TimeOnly>("ShiftEnd")
-                        .HasColumnType("time");
-
-                    b.Property<TimeOnly>("ShiftStart")
-                        .HasColumnType("time");
 
                     b.HasKey("Id");
 
