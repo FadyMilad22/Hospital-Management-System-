@@ -55,6 +55,9 @@ namespace HospitalManagementSystem2.Controllers
 
             return View("DoctorAvailableTimeSlots", schedule);
         }
-
+        public IActionResult Delete(int Id)
+        {
+            return View();
+        }
     }
 }

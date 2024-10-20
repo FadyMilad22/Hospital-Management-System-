@@ -7715,19 +7715,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lobna\\.nuget\\packages\\": {}
+    "C:\\Users\\Marwa Samy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lobna\\source\\repos\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
+      "projectUniqueName": "D:\\study\\MVC\\Project\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
       "projectName": "HospitalManagementSystem2",
-      "projectPath": "C:\\Users\\Lobna\\source\\repos\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
-      "packagesPath": "C:\\Users\\Lobna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lobna\\source\\repos\\Hospital-Management-System-\\HospitalManagementSystem2\\obj\\",
+      "projectPath": "D:\\study\\MVC\\Project\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
+      "packagesPath": "C:\\Users\\Marwa Samy\\.nuget\\packages\\",
+      "outputPath": "D:\\study\\MVC\\Project\\Hospital-Management-System-\\HospitalManagementSystem2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lobna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Marwa Samy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7797,7 +7797,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
