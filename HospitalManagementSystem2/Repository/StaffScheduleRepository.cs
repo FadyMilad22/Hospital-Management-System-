@@ -35,35 +35,6 @@ namespace HospitalManagementSystem2.Repository
             .ToList();
 
 
-
-
-
-
-
-
-
-
-
-
-          /*  var availableschedules =
-                 context.StaffSchedules
-                 .Include(ss => ss.Schedule)
-                 .Include(ss => ss.Staff)
-                 .Where(ss => ss.StaffId == staffId)
-                 .Select(ss => new
-                 {
-                     Schedule = ss.Schedule,
-                     Appointments = context.Appointments
-                    .Where(a => a.StaffId == staffId &&
-                                a.AppointmentDateTime.Date == ss.Schedule.Date) // Match only on the Date
-                    .AsEnumerable() // Switch to client-side evaluation for the TimeOnly comparison
-                    .Where(a => TimeOnly.FromDateTime(a.AppointmentDateTime) >= ss.Schedule.AvailableFrom && // Check if appointment time is after available from
-                                TimeOnly.FromDateTime(a.AppointmentDateTime) <= ss.Schedule.AvailableTo) // Check if appointment time is before available to
-                    .ToList()
-                 })
-                 .Where(x => !x.Appointments.Any()) // Check for no appointments (not booked)
-                 .Select(x => x.Schedule)
-                .ToList();*/
             return availableSchedules;
         }
     }
