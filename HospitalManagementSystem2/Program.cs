@@ -18,6 +18,7 @@ namespace HospitalManagementSystem2
                 builder.Configuration.GetConnectionString("cs");
             });
             builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+            builder.Services.AddScoped<IStaffScheduleRepository, StaffScheduleRepository>();
 
             var app = builder.Build();
 

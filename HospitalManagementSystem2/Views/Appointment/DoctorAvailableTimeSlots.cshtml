@@ -1,0 +1,41 @@
+﻿@model List<Schedule>
+
+<h1 class="text-center" style="color:rgb(24 187 155)">Available Appointments </h1>
+
+<table class="table table-bordered table-hover table-info ">
+
+    <thead>
+
+    <th> Date </th>
+    <th> Start Time</th>
+    <th> End Time</th>
+    <th></th>
+
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Date.ToString("d")</td>
+                <td>
+                   @item.AvailableFrom
+                </td>
+                <td>@item.AvailableTo</td>
+           
+                
+              <td>
+                        <a class="btn btn-primary" asp-action="" asp-controller="Appointment" asp-route-id="">Book Appointment</a>
+                </td>
+                 
+            </tr>
+
+
+        }
+    </tbody>
+
+
+
+
+</table>
+

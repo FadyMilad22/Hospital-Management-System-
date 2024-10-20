@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HospitalManagementSystem2
 build_property.RootNamespace = HospitalManagementSystem2
@@ -17,6 +25,10 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Lobna\source\repos\Hospital-Management-System-\HospitalManagementSystem2
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/DoctorAvailableTimeSlots.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcRG9jdG9yQXZhaWxhYmxlVGltZVNsb3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/SpecificAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcU3BlY2lmaWNBcHBvaW50bWVudC5jc2h0bWw=

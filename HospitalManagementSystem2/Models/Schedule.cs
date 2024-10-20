@@ -9,11 +9,11 @@ public partial class Schedule
 {
     public int Id { get; set; }
 
-    public string DayOfWeek { get; set; }
+    public DateTime Date { get; set; }
 
-    public TimeOnly ShiftStart { get; set; }
+    public TimeOnly AvailableFrom { get; set; }
 
-    public TimeOnly ShiftEnd { get; set; }
+    public TimeOnly AvailableTo { get; set; }
 
     public bool IsDeleted { get; set; }
 
