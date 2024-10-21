@@ -13,20 +13,15 @@ namespace HospitalManagementSystem2
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddDbContext<HospitalManagementSystem2Context>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("HospitalManagementSystem2Context") ?? throw new InvalidOperationException("Connection string 'HospitalManagementSystem2Context' not found.")));
-
+         
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddTransient<HospitalManagementSystem2.Repository.Interfaces.IEmailSender, HospitalManagementSystem2.Repository.EmailSender>();
-
 
             builder.Services.AddDbContext<HospitalContext>(options =>
             {
                 builder.Configuration.GetConnectionString("cs");
             });
-
 
             builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
             builder.Services.AddScoped<IStaffScheduleRepository, StaffScheduleRepository>();
