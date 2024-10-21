@@ -55,5 +55,36 @@ namespace HospitalManagementSystem2.Repository
 
            
         }
+
+        public void AddAppointment(Appointment appointment)
+        {
+            context.Appointments.Add(appointment);
+        }
+
+        public void RemoveAppointment(int Id)
+        {
+            var appointment = GetById(Id);
+            context.Appointments.Remove(appointment);
+        }
+
+        public void UpdateAppointment(Appointment appointment)
+        {
+            context.Appointments.Update(appointment);
+        }
+
+        public List<Staff> GetAllStaff(int DepartmentId)
+        {
+            List<Staff> staff = context.Staff
+               .Where(s => s.DepartmentId == DepartmentId)
+               .Include(a => a.User)
+               .Include(d => d.Department)
+               .ToList();
+            return staff;
+        }
+
+        public void Save()
+        {
+            context.SaveChanges();
+        }
     }
 }
