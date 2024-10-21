@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVGVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/UpdateAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVXBkYXRlQXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ViewAppointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVmlld0FwcG9pbnRtZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -64,6 +68,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Shared/Error.cshtml]
