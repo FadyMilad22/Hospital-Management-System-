@@ -100,5 +100,20 @@ namespace HospitalManagementSystem2.Controllers
             return Content("Booked ");
         }
 
+        public IActionResult UpdateAppointment(int Id,int DepartmentId )
+        {
+            ViewBag.Id = Id;
+            ViewBag.DepartmentId = DepartmentId;
+            return View();
+        }
+
+        public IActionResult DeleteAndChange(int Id,int DepartmentId)
+        {
+            appointmentRepository.RemoveAppointment(Id);
+            appointmentRepository.Save();
+            List<Staff> staff = appointmentRepository.GetAllStaff(DepartmentId);
+            return View("ChooseDoctor", staff);
+        }
+
     }
 }
