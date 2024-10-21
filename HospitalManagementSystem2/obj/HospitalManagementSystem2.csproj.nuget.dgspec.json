@@ -1,28 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\study\\MVC\\Project\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj": {}
+    "C:\\Users\\Ramiz\\Source\\Repos\\Hospital-Management-System\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj": {}
   },
   "projects": {
-    "D:\\study\\MVC\\Project\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj": {
+    "C:\\Users\\Ramiz\\Source\\Repos\\Hospital-Management-System\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\study\\MVC\\Project\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
+        "projectUniqueName": "C:\\Users\\Ramiz\\Source\\Repos\\Hospital-Management-System\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
         "projectName": "HospitalManagementSystem2",
-        "projectPath": "D:\\study\\MVC\\Project\\Hospital-Management-System-\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
-        "packagesPath": "C:\\Users\\Marwa Samy\\.nuget\\packages\\",
-        "outputPath": "D:\\study\\MVC\\Project\\Hospital-Management-System-\\HospitalManagementSystem2\\obj\\",
+        "projectPath": "C:\\Users\\Ramiz\\Source\\Repos\\Hospital-Management-System\\HospitalManagementSystem2\\HospitalManagementSystem2.csproj",
+        "packagesPath": "C:\\Users\\Ramiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramiz\\Source\\Repos\\Hospital-Management-System\\HospitalManagementSystem2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Marwa Samy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ramiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Ramiz\\Documents": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

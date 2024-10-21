@@ -1,7 +1,10 @@
-using HospitalManagementSystem2.Models;
+﻿using HospitalManagementSystem2.Models;
 using HospitalManagementSystem2.Repository;
 using HospitalManagementSystem2.Repository.Interfaces;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using HospitalManagementSystem2.Data;
 
 namespace HospitalManagementSystem2
 {
@@ -10,6 +13,8 @@ namespace HospitalManagementSystem2
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<HospitalManagementSystem2Context>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("HospitalManagementSystem2Context") ?? throw new InvalidOperationException("Connection string 'HospitalManagementSystem2Context' not found.")));
 
 
             // Add services to the container.
