@@ -3,6 +3,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace HospitalManagementSystem2.Models;
 
@@ -10,6 +11,9 @@ public partial class Department
 {
     public int Id { get; set; }
 
+    [Display(Name = "Department Name")]
+    [Required]
+    [UniqueDepartmentName]
     public string Name { get; set; }
 
     public bool IsDeleted { get; set; }
