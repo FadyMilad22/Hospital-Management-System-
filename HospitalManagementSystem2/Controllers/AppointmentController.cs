@@ -8,13 +8,14 @@ namespace HospitalManagementSystem2.Controllers
 {
     public class AppointmentController : Controller
     {
-        IAppointmentRepository appointmentRepository;
-        IStaffScheduleRepository scheduleRepository;
-
-        public AppointmentController(IAppointmentRepository _appointmnetrepo, IStaffScheduleRepository _scheduleRepository)
+      private readonly  IAppointmentRepository appointmentRepository;
+     private readonly   IStaffScheduleRepository scheduleRepository;
+     private readonly   IEmailSender emailSender;
+        public AppointmentController(IAppointmentRepository _appointmnetrepo, IStaffScheduleRepository _scheduleRepository,IEmailSender _emailSender)
         {
            appointmentRepository= _appointmnetrepo;
             scheduleRepository= _scheduleRepository;
+            emailSender = _emailSender;
         }
         //Appointment/Test
         public IActionResult Test() { 
@@ -48,12 +49,28 @@ namespace HospitalManagementSystem2.Controllers
 
             return View("SpecificAppointment", appointment);
         }
-        //Appointment/GetAvailableTimeSlots?StaffId=1
-        public IActionResult GetAvailableTimeSlots(int StaffId)//
+        //Appointment/GetAvailableTimeSlots?Id=1
+        public IActionResult GetAvailableTimeSlots(int Id)//
         {
-            List<Schedule> schedule = scheduleRepository.getAvailableTimeSlots(StaffId);
+            List<Schedule> schedule = scheduleRepository.getAvailableTimeSlots(Id);
 
             return View("DoctorAvailableTimeSlots", schedule);
+        }
+
+        public async Task<IActionResult> TriggerEmail()
+        {
+         
+            try
+            {
+                // Send the email
+                await emailSender.SendEmailAsync("marwa.elfayoumy9@gmail.com","Test", "\"<h1>This is an automated notification</h1><p>Your appointment is scheduled for tomorrow.</p>");
+                return Ok("Email sent successfully.");
+            }
+            catch (Exception ex)
+            {
+                // Handle any errors
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
     }

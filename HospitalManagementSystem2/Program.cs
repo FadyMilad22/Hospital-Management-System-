@@ -1,6 +1,7 @@
 using HospitalManagementSystem2.Models;
 using HospitalManagementSystem2.Repository;
 using HospitalManagementSystem2.Repository.Interfaces;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace HospitalManagementSystem2
 {
@@ -10,13 +11,18 @@ namespace HospitalManagementSystem2
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddTransient<HospitalManagementSystem2.Repository.Interfaces.IEmailSender, HospitalManagementSystem2.Repository.EmailSender>();
+
 
             builder.Services.AddDbContext<HospitalContext>(options =>
             {
                 builder.Configuration.GetConnectionString("cs");
             });
+
+
             builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
             builder.Services.AddScoped<IStaffScheduleRepository, StaffScheduleRepository>();
 
