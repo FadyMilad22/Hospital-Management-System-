@@ -3,7 +3,6 @@ using HospitalManagementSystem2.Repository;
 using HospitalManagementSystem2.Repository.Interfaces;
 using HospitalManagementSystem2.ViewModel;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HospitalManagementSystem2.Controllers
 {
@@ -11,13 +10,11 @@ namespace HospitalManagementSystem2.Controllers
     {
         IAppointmentRepository appointmentRepository;
         IStaffScheduleRepository scheduleRepository;
-        IDepartmentRepository departmentRepository;
 
-        public AppointmentController(IAppointmentRepository _appointmnetrepo, IStaffScheduleRepository _scheduleRepository, IDepartmentRepository _departmentRepository)
+        public AppointmentController(IAppointmentRepository _appointmnetrepo, IStaffScheduleRepository _scheduleRepository)
         {
            appointmentRepository= _appointmnetrepo;
             scheduleRepository= _scheduleRepository;
-            departmentRepository= _departmentRepository;
         }
         //Appointment/Test
         public IActionResult Test() { 
@@ -58,37 +55,9 @@ namespace HospitalManagementSystem2.Controllers
 
             return View("DoctorAvailableTimeSlots", schedule);
         }
-
-        //Appointment/GetAllDepartments
-        public IActionResult GetAllDepartments()
-        {
-
-            var departmentList = departmentRepository.GetAllDepartments();
-            ViewBag.Departments = new SelectList(departmentList, "Id", "Name");
-            return View("ChooseDepartment");
-        }
-
         public IActionResult Delete(int Id)
         {
-            if (Id == null)
-            {
-                return NotFound();
-            }
-            else
-            {
-                appointmentRepository.RemoveAppointment(Id);
-                appointmentRepository.Save();
-            }
-            return View("ChooseDepartment");
+            return View();
         }
-
-        //Appointment/ChooseDoctor
-        public IActionResult ChooseDoctor(int Id)
-        {
-
-            List<Staff> staff = appointmentRepository.GetAllStaff(Id);
-            return View(staff);
-        }
-
     }
 }

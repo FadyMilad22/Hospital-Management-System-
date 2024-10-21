@@ -10,13 +10,5 @@ namespace HospitalManagementSystem2.Repository.Interfaces
 
         public Appointment GetById(int AppointmentId);
 
-        public void AddAppointment(Appointment appointment);
-
-        public void RemoveAppointment(int Id);
-
-        public void UpdateAppointment(Appointment appointment);
-
-        public List<Staff> GetAllStaff(int DepartmentId);
-        public void Save();
     }
 }
