@@ -34,7 +34,6 @@ namespace HospitalManagementSystem2.Repository
             .Select(ss => ss.Schedule) 
             .ToList();
 
-
             return availableSchedules;
         }
     }
