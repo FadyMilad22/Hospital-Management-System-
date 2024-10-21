@@ -52,9 +52,11 @@ namespace HospitalManagementSystem2.Controllers
             return View("SpecificAppointment", appointment);
         }
         //Appointment/GetAvailableTimeSlots?StaffId=1
-        public IActionResult GetAvailableTimeSlots(int StaffId)//
+        public IActionResult GetAvailableTimeSlots(int Id, int DepartmentId)//
         {
-            List<Schedule> schedule = scheduleRepository.getAvailableTimeSlots(StaffId);
+            ViewBag.StaffId = Id;
+            ViewBag.DepartmentId = DepartmentId;
+            List<Schedule> schedule = scheduleRepository.getAvailableTimeSlots(Id);
 
             return View("DoctorAvailableTimeSlots", schedule);
         }
@@ -88,6 +90,14 @@ namespace HospitalManagementSystem2.Controllers
 
             List<Staff> staff = appointmentRepository.GetAllStaff(Id);
             return View(staff);
+        }
+
+        public IActionResult BookAppointment(Appointment appointment)
+        {
+            appointment.Status = "Scheduled";
+            appointmentRepository.AddAppointment(appointment);
+            appointmentRepository.Save();
+            return Content("Booked ");
         }
 
     }

@@ -40,7 +40,7 @@
                 @Html.DisplayFor(modelItem => item.Department.Name)
             </td>
             <td>
-                    <a asp-action="GetAvailableTimeSlots" asp-controller="Appointment" asp-route-Id="@item.Id" class="btn btn-primary mx-2">Show Available Time</a>
+                    <a asp-action="GetAvailableTimeSlots" asp-controller="Appointment" asp-route-Id="@item.Id" asp-route-DepartmentId="@item.DepartmentId" class="btn btn-primary mx-2">Show Available Time</a>
             </td>
         </tr>
 }

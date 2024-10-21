@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\study\MVC\Project\Hospital-Management-System-\HospitalManagementSystem2
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ChooseDepartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcQ2hvb3NlRGVwYXJ0bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ChooseDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcQ2hvb3NlRG9jdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/DoctorAvailableTimeSlots.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcRG9jdG9yQXZhaWxhYmxlVGltZVNsb3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +48,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ViewAppointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVmlld0FwcG9pbnRtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Department/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Department/GetAllDepartments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxHZXRBbGxEZXBhcnRtZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Home/Index.cshtml]
