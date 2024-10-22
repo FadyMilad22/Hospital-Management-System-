@@ -28,6 +28,7 @@ namespace HospitalManagementSystem2.Controllers
 
         public IActionResult SaveNew(Department department)
         {
+            department.IsDeleted = false;
             if (ModelState.IsValid)
             {
                 departmentRepository.AddDepartment(department);
