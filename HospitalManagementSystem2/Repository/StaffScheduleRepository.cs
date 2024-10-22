@@ -12,6 +12,14 @@ namespace HospitalManagementSystem2.Repository
             context = _context;
         }
 
+        public void AddStaffSchedule(StaffSchedule staffSchedule)
+        {
+         
+                context.StaffSchedules.Add(staffSchedule);
+
+            
+        }
+
         public List<Schedule> getAvailableTimeSlots(int staffId)
         {
             var staffSchedules =  context.StaffSchedules
@@ -28,13 +36,18 @@ namespace HospitalManagementSystem2.Repository
 
             var availableSchedules = staffSchedules
             .Where(ss => !appointments.Any(appointment =>
-                appointment.AppointmentDateTime.Date == ss.Schedule.Date && // Match the date
-                TimeOnly.FromDateTime(appointment.AppointmentDateTime) >= ss.Schedule.AvailableFrom && // Check appointment start time
-                TimeOnly.FromDateTime(appointment.AppointmentDateTime) <= ss.Schedule.AvailableTo)) // Check appointment end time
+                appointment.AppointmentDateTime.Date == ss.Schedule.Date && 
+                TimeOnly.FromDateTime(appointment.AppointmentDateTime) >= ss.Schedule.AvailableFrom && 
+                TimeOnly.FromDateTime(appointment.AppointmentDateTime) <= ss.Schedule.AvailableTo)) 
             .Select(ss => ss.Schedule) 
             .ToList();
 
             return availableSchedules;
+        }
+
+        public void save()
+        {
+            context.SaveChanges();
         }
     }
 }

@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace HospitalManagementSystem2.Models;
 
@@ -9,8 +10,11 @@ public partial class StaffSchedule
 {
     public int Id { get; set; }
 
+    [Required]
     public int ScheduleId { get; set; }
 
+    [Required]
+    [UniqueStaffSchedule]
     public int StaffId { get; set; }
     public bool IsDeleted { get; set; }
 
