@@ -17,123 +17,143 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HospitalManagementSystem2
 build_property.RootNamespace = HospitalManagementSystem2
-build_property.ProjectDir = C:\Users\Lobna\source\repos\Hospital-Management-System-\HospitalManagementSystem2\
+build_property.ProjectDir = D:\study\MVC\Project\Hospital-Management-System-\HospitalManagementSystem2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Lobna\source\repos\Hospital-Management-System-\HospitalManagementSystem2
+build_property.MSBuildProjectDirectory = D:\study\MVC\Project\Hospital-Management-System-\HospitalManagementSystem2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ChooseDepartment.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ChooseDepartment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcQ2hvb3NlRGVwYXJ0bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ChooseDoctor.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ChooseDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcQ2hvb3NlRG9jdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/DoctorAvailableTimeSlots.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/DoctorAvailableTimeSlots.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcRG9jdG9yQXZhaWxhYmxlVGltZVNsb3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/SpecificAppointment.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/SpecificAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcU3BlY2lmaWNBcHBvaW50bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/Test.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/Test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVGVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/UpdateAppointment.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/UpdateAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVXBkYXRlQXBwb2ludG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ViewAppointments.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Appointment/ViewAppointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVmlld0FwcG9pbnRtZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Department/Add.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Department/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Department/GetAllDepartments.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Department/GetAllDepartments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxHZXRBbGxEZXBhcnRtZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Home/Index.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Home/Privacy.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Create.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Delete.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Details.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Edit.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Index.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/MedicalHistories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbEhpc3Rvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Shared/Error.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Patient/AddPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxBZGRQYXRpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Patient/DeletePatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxEZWxldGVQYXRpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Patient/EditPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxFZGl0UGF0aWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Patient/GetAllPatients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxHZXRBbGxQYXRpZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Patient/GetPatientById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxHZXRQYXRpZW50QnlJZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Shared/_Hospital1Layout.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Shared/_Hospital1Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib3NwaXRhbDFMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/StaffSchedule/Assign.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/StaffSchedule/Assign.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZTY2hlZHVsZVxBc3NpZ24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Create.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Delete.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Details.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Edit.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Index.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Staff/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/_ViewImports.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/_ViewStart.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lobna/source/repos/Hospital-Management-System-/HospitalManagementSystem2/Views/Shared/_Layout.cshtml]
+[D:/study/MVC/Project/Hospital-Management-System-/HospitalManagementSystem2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ekxfg3u94r

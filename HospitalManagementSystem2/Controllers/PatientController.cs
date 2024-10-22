@@ -7,7 +7,7 @@ namespace HospitalManagementSystem2.Controllers
 {
     public class PatientController : Controller
     {
-        HospitalContext context = new HospitalContext();
+        HospitalContext context ;
         public PatientController()
         {
 
