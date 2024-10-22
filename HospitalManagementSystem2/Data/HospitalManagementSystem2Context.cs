@@ -7,13 +7,13 @@ using HospitalManagementSystem2.Models;
 
 namespace HospitalManagementSystem2.Data
 {
-    public class HospitalManagementSystem2Context : DbContext
-    {
-        public HospitalManagementSystem2Context (DbContextOptions<HospitalManagementSystem2Context> options)
-            : base(options)
-        {
-        }
+    //public class HospitalManagementSystem2Context : DbContext
+    //{
+    //    public HospitalManagementSystem2Context (DbContextOptions<HospitalManagementSystem2Context> options)
+    //        : base(options)
+    //    {
+    //    }
 
-        public DbSet<HospitalManagementSystem2.Models.MedicalHistory> MedicalHistory { get; set; } = default!;
-    }
+    //    public DbSet<HospitalManagementSystem2.Models.MedicalHistory> MedicalHistory { get; set; } = default!;
+    //}
 }

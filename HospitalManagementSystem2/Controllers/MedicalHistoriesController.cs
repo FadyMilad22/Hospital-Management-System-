@@ -47,6 +47,30 @@ namespace HospitalManagementSystem2.Controllers
             return View("PatientHistory", medicalHistories);
         }
 
+        // GET: MedicalHistories/CreateOrUpdate (for showing the create/edit form)
+        public IActionResult CreateOrUpdate(int? id)
+        {
+            // NEW: Populate ViewBag for dropdowns
+            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "Name"); // NEW
+            ViewData["StaffId"] = new SelectList(_context.Staff, "Id", "Name"); // NEW
+
+            if (id == null)
+            {
+                // Creating a new medical history
+                return View(new MedicalHistory());
+            }
+            else
+            {
+                // Editing an existing medical history
+                var medicalHistory = _context.MedicalHistories.Find(id);
+                if (medicalHistory == null)
+                {
+                    return NotFound();
+                }
+                return View(medicalHistory);
+            }
+        }
+
         // POST: MedicalHistories/CreateOrUpdate
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -60,33 +84,84 @@ namespace HospitalManagementSystem2.Controllers
                 }
                 else
                 {
-                    try
-                    {
-                        _context.Update(medicalHistory);
-                    }
-                    catch (DbUpdateConcurrencyException)
-                    {
-                        if (!MedicalHistoryExists(medicalHistory.Id))
-                        {
-                            return NotFound();
-                        }
-                        else
-                        {
-                            throw;
-                        }
-                    }
+                    _context.Update(medicalHistory);
                 }
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "Id", medicalHistory.PatientId);
-            ViewData["StaffId"] = new SelectList(_context.Staff, "Id", "Id", medicalHistory.StaffId);
+
+            // NEW: Populate ViewBag for dropdowns in case of model validation failure
+            ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "Name", medicalHistory.PatientId); // NEW
+            ViewData["StaffId"] = new SelectList(_context.Staff, "Id", "Name", medicalHistory.StaffId); // NEW
             return View(medicalHistory);
         }
 
         private bool MedicalHistoryExists(int id)
         {
             return _context.MedicalHistories.Any(e => e.Id == id);
+   }
+
+
+
+
+        // GET: MedicalHistories/Delete/
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var medicalHistory = await _context.MedicalHistories
+                .Include(m => m.Patient)
+                .Include(m => m.Staff)
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (medicalHistory == null)
+            {
+                return NotFound();
+            }
+
+            return View(medicalHistory);
         }
+
+        // POST: MedicalHistories/Delete/
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var medicalHistory = await _context.MedicalHistories.FindAsync(id);
+            if (medicalHistory != null)
+            {
+                _context.MedicalHistories.Remove(medicalHistory);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
