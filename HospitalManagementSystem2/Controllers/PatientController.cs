@@ -7,14 +7,11 @@ namespace HospitalManagementSystem2.Controllers
 {
     public class PatientController : Controller
     {
-        
-        private readonly HospitalContext context;
-
-        public PatientController(HospitalContext context)
+        HospitalContext context = new HospitalContext();
+        public PatientController()
         {
-            this.context = context;
-        }
 
+        }
         [HttpGet]
         public IActionResult GetAllPatients()
         {           
@@ -34,16 +31,20 @@ namespace HospitalManagementSystem2.Controllers
             return View("GetPatientById", patient);
         }
         [HttpGet]
-        public IActionResult Add(int UserId)
+        public IActionResult Add(User userFromReq)
         {
-            ViewBag.UserId = UserId;
-           // ViewData["usersList"] = context.Users.ToList();
+            ViewData["userId"] = userFromReq.Id;
+            ViewData["usersList"] = context.Users.ToList();
             return View("AddPatient");
         }
         [HttpPost]
         public IActionResult AddPatient(Patient patientFromReq) {
             
-            if (ModelState.IsValid
+            if (patientFromReq.InsuranceProvider != null
+                &&patientFromReq.InsuranceNumber!=null
+                &&patientFromReq.Dob!=null
+                &&patientFromReq.Address!=null
+                &&patientFromReq.EmergencyContact!=null
                 ) {
                 try
                 {
@@ -60,7 +61,7 @@ namespace HospitalManagementSystem2.Controllers
                 }
             }
             
-            //ViewData["usersList"] = context.Users.ToList();
+            ViewData["usersList"] = context.Users.ToList();
             return View("AddPatient", patientFromReq);
 
         }
@@ -120,14 +121,14 @@ namespace HospitalManagementSystem2.Controllers
         [HttpGet]
         public IActionResult DeletePatient(int id)
         {
-         
+
             Patient patient = context.Patients.FirstOrDefault(e => e.Id == id);
             if (patient == null)
             {
                 return RedirectToAction("GetAllPatients");
             }
 
-            return View("DeletePatient",patient);
+            return View("DeletePatient", patient);
 
 
 
@@ -186,8 +187,7 @@ namespace HospitalManagementSystem2.Controllers
 
                     context.Users.Add(userFromReq);
                     context.SaveChanges();
-
-                    return RedirectToAction("Add", new { UserId = userFromReq.Id });
+                    return RedirectToAction("Add", userFromReq);
                 }
                 catch (Exception ex)
                 {
