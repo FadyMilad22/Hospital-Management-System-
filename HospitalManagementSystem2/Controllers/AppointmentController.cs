@@ -42,7 +42,7 @@ namespace HospitalManagementSystem2.Controllers
             return View("ViewAppointments", appointments);
         }
 
-        //Appointment/GetAppointmentsById/
+        //Appointment/GetAppointmentById/
         
         public IActionResult GetAppointmentById(int Id)
         {
@@ -81,7 +81,7 @@ namespace HospitalManagementSystem2.Controllers
                 appointmentRepository.RemoveAppointment(Id);
                 appointmentRepository.Save();
             }
-            return View("ChooseDepartment");
+          return RedirectToAction("PUser", "PUser");
         }
 
         //Appointment/ChooseDoctor
@@ -97,7 +97,8 @@ namespace HospitalManagementSystem2.Controllers
             appointment.Status = "Scheduled";
             appointmentRepository.AddAppointment(appointment);
             appointmentRepository.Save();
-            return Content("Booked ");
+            return RedirectToAction("GetAppointmentsByPatient", new { PatientId = appointment.PatientId });
+
         }
 
         public IActionResult UpdateAppointment(int Id,int DepartmentId )
