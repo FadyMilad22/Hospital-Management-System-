@@ -72,6 +72,7 @@ namespace HospitalManagementSystem2.Controllers
             {
                 return RedirectToAction("GetAllPatients");
             }
+            ViewData["userId"] = userFromReq.Id;
             ViewData["usersList"] = context.Users.ToList();
             return View("EditPatient", patient);
 
