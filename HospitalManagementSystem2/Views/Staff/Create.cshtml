@@ -15,6 +15,13 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
+                <label asp-for="UserId" class="control-label">User</label>
+                <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId">
+                    <option value="">-- Select User --</option>
+                </select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Qualification" class="control-label"></label>
                 <input asp-for="Qualification" class="form-control" />
                 <span asp-validation-for="Qualification" class="text-danger"></span>
@@ -24,15 +31,7 @@
                 <input asp-for="Position" class="form-control" />
                 <span asp-validation-for="Position" class="text-danger"></span>
             </div>
-            <!--
-            <div class="form-group">
-                <label asp-for="DepartmentId" class="control-label"></label>
-                <select asp-for="DepartmentId" class="form-control"
-                        asp-items=DeptOptions>
-                    <option value="0"> --Select Department --</option>
-                </select>
-            </div>
-            -->
+
             <div class="form-group">
                 <label asp-for="DepartmentId" class="control-label">Department</label>
                 <select asp-for="DepartmentId" class="form-control" asp-items="ViewBag.DepartmentId" aria-label="Department">

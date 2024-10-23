@@ -7,14 +7,11 @@ namespace HospitalManagementSystem2.Controllers
 {
     public class PatientController : Controller
     {
-        
-        private readonly HospitalContext context;
-
-        public PatientController(HospitalContext context)
+        HospitalContext context = new HospitalContext();
+        public PatientController()
         {
-            this.context = context;
-        }
 
+        }
         [HttpGet]
         public IActionResult GetAllPatients()
         {           
@@ -34,8 +31,9 @@ namespace HospitalManagementSystem2.Controllers
             return View("GetPatientById", patient);
         }
         [HttpGet]
-        public IActionResult Add()
+        public IActionResult Add(User userFromReq)
         {
+            ViewData["userId"] = userFromReq.Id;
             ViewData["usersList"] = context.Users.ToList();
             return View("AddPatient");
         }
@@ -75,6 +73,7 @@ namespace HospitalManagementSystem2.Controllers
             {
                 return RedirectToAction("GetAllPatients");
             }
+            ViewData["userId"] = userFromReq.Id;
             ViewData["usersList"] = context.Users.ToList();
             return View("EditPatient", patient);
 
@@ -122,14 +121,14 @@ namespace HospitalManagementSystem2.Controllers
         [HttpGet]
         public IActionResult DeletePatient(int id)
         {
-         
+
             Patient patient = context.Patients.FirstOrDefault(e => e.Id == id);
             if (patient == null)
             {
                 return RedirectToAction("GetAllPatients");
             }
 
-            return View("DeletePatient",patient);
+            return View("DeletePatient", patient);
 
 
 
@@ -188,9 +187,7 @@ namespace HospitalManagementSystem2.Controllers
 
                     context.Users.Add(userFromReq);
                     context.SaveChanges();
-
-
-                    return RedirectToAction("Add");
+                    return RedirectToAction("Add", userFromReq);
                 }
                 catch (Exception ex)
                 {
