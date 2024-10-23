@@ -7,11 +7,14 @@ namespace HospitalManagementSystem2.Controllers
 {
     public class PatientController : Controller
     {
-        HospitalContext context = new HospitalContext();
-        public PatientController()
-        {
+        
+        private readonly HospitalContext context;
 
+        public PatientController(HospitalContext context)
+        {
+            this.context = context;
         }
+
         [HttpGet]
         public IActionResult GetAllPatients()
         {           
