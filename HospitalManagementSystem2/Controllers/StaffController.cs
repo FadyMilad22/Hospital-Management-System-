@@ -48,13 +48,12 @@ namespace HospitalManagementSystem2.Controllers
         // GET: Staff/Create
         public IActionResult Create()
         {
-            ViewData["DepartmentList"] = _context.Departments.ToList();
+            // Populate ViewBag.DepartmentId with the department list
+            ViewBag.DepartmentId = new SelectList(_context.Departments, "Id", "Name");
             return View();
         }
 
         // POST: Staff/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Position,Qualification,UserId,DepartmentId")] Staff staff)
@@ -65,7 +64,11 @@ namespace HospitalManagementSystem2.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartmentList"] = _context.Departments.ToList();
+
+            // Repopulate the DepartmentId SelectList in case of validation error
+            ViewBag.DepartmentId = new SelectList(_context.Departments, "Id", "Name");
+
+            // Return the view with the model to preserve entered values
             return View(staff);
         }
 
@@ -82,8 +85,8 @@ namespace HospitalManagementSystem2.Controllers
             {
                 return NotFound();
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Id", staff.DepartmentId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", staff.UserId);
+            ViewBag.DepartmentId = new SelectList(_context.Departments, "Id", "Name");
+           // ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", staff.UserId);
             return View(staff);
         }
 
@@ -120,7 +123,7 @@ namespace HospitalManagementSystem2.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Id", staff.DepartmentId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", staff.UserId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", staff.UserId);
             return View(staff);
         }
 
