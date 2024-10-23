@@ -50,6 +50,8 @@ namespace HospitalManagementSystem2.Controllers
         {
             // Populate ViewBag.DepartmentId with the department list
             ViewBag.DepartmentId = new SelectList(_context.Departments, "Id", "Name");
+            // Populate User dropdown list
+            ViewBag.UserId = new SelectList(_context.Users, "Id", "Name");
             return View();
         }
 
@@ -65,9 +67,9 @@ namespace HospitalManagementSystem2.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // Repopulate the DepartmentId SelectList in case of validation error
+            // Repopulate the Departments and users SelectList in case of validation error
             ViewBag.DepartmentId = new SelectList(_context.Departments, "Id", "Name");
-
+            ViewBag.UserId = new SelectList(_context.Users, "Id", "Name", staff.UserId);
             // Return the view with the model to preserve entered values
             return View(staff);
         }
@@ -85,8 +87,11 @@ namespace HospitalManagementSystem2.Controllers
             {
                 return NotFound();
             }
+            //Populate Department dropdown list
             ViewBag.DepartmentId = new SelectList(_context.Departments, "Id", "Name");
-           // ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", staff.UserId);
+            // Populate User dropdown list
+            ViewBag.UserId = new SelectList(_context.Users, "Id", "Name", staff.UserId);
+
             return View(staff);
         }
 
@@ -122,8 +127,8 @@ namespace HospitalManagementSystem2.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Id", staff.DepartmentId);
-            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", staff.UserId);
+            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name", staff.DepartmentId);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", staff.UserId);
             return View(staff);
         }
 
