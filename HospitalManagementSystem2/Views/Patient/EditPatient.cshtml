@@ -6,18 +6,9 @@
     ViewData["Title"] = "Update Patient";
     SelectList userOptions = new SelectList(ViewBag.usersList, "Id", "Name");
 }
-<form method="post" action="/Patient/SaveEditPatient/@Model.Id">
+<form method="post" action="/Patient/SaveEditPatient/@Model.UserId">
     <h3>Update Patient</h3>
     <div class="">
-    @*     <div class="form-group">
-            <input type="text" name="Name" id="Name" value="@Model?.User.Name" class="form-control" placeholder="Name">
-        </div> 
-         <div class="form-group">
-            <input type="email" name="Email" id="Email" value="@Model?.User.Email" class="form-control" placeholder="E-mail">
-        </div> 
-         <div class="form-group">
-            <input type="password" name="Password" id="Password" value="@Model?.User.Password" class="form-control" placeholder="Password">
-        </div> *@
         <div class="form-group">
             <input type="text" name="EmergencyContact" id=" EmergencyContact" value="@Model.EmergencyContact" class="form-control" placeholder="Emergency Contact">
         </div>
@@ -27,15 +18,12 @@
         <div class="form-group">
             <input type="text" name="InsuranceProvider" id="InsuranceProvider" value="@Model.InsuranceProvider" class="form-control" placeholder="Insurance Provider">
         </div>
-    @*      <div class="form-group">
-            <input type="text" name="PhoneNumber" id="PhoneNumber" value="@Model?.User.PhoneNumber" class="form-control" placeholder="Phone">
-        </div>  *@
         <div class="form-group">
             <select asp-for="UserId" asp-items="userOptions" class="form-control">
             </select>
         </div>      
         <div class="form-group">
-            <input type="text" name="Address" id="Address" value="@Model.Address" class="form-control" placeholder="Phone">
+            <input type="text" name="Address" id="Address" value="@Model.Address" class="form-control" placeholder="Address">
         </div>
         <div class="form-group">
             <div class="input-wrap">

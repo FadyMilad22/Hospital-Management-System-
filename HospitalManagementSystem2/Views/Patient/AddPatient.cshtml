@@ -31,13 +31,10 @@
         <div class="form-group">
                 <input type="text" name="InsuranceProvider" id="InsuranceProvider" value="@Model?.InsuranceProvider"class="form-control" placeholder="Insurance Provider">
         </div>
-        <div class="form-group">
-
-
-            
+        <div class="form-group">        
             <select asp-for="UserId" asp-items="userOptions" class="form-control">
-            </select>
-            </div>
+           </select>
+           </div>
         <div class="form-group">
             <div class="input-wrap">
                 <input type="datetime" name="Dob" id=" Dob" value="@Model?.Dob" class="form-control" placeholder="Date of Birth">
