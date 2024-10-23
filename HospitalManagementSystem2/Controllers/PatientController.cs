@@ -34,19 +34,16 @@ namespace HospitalManagementSystem2.Controllers
             return View("GetPatientById", patient);
         }
         [HttpGet]
-        public IActionResult Add()
+        public IActionResult Add(int UserId)
         {
-            ViewData["usersList"] = context.Users.ToList();
+            ViewBag.UserId = UserId;
+           // ViewData["usersList"] = context.Users.ToList();
             return View("AddPatient");
         }
         [HttpPost]
         public IActionResult AddPatient(Patient patientFromReq) {
             
-            if (patientFromReq.InsuranceProvider != null
-                &&patientFromReq.InsuranceNumber!=null
-                &&patientFromReq.Dob!=null
-                &&patientFromReq.Address!=null
-                &&patientFromReq.EmergencyContact!=null
+            if (ModelState.IsValid
                 ) {
                 try
                 {
@@ -63,7 +60,7 @@ namespace HospitalManagementSystem2.Controllers
                 }
             }
             
-            ViewData["usersList"] = context.Users.ToList();
+            //ViewData["usersList"] = context.Users.ToList();
             return View("AddPatient", patientFromReq);
 
         }
@@ -189,8 +186,7 @@ namespace HospitalManagementSystem2.Controllers
                     context.Users.Add(userFromReq);
                     context.SaveChanges();
 
-
-                    return RedirectToAction("Add");
+                    return RedirectToAction("Add", new { UserId = userFromReq.Id });
                 }
                 catch (Exception ex)
                 {
