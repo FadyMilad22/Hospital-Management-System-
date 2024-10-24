@@ -44,18 +44,24 @@
         }
 
         .manage-staff {
-            background-color: #2196F3; /* Blue */
+            background-color: #2196F3; 
             color: white;
         }
 
         .manage-schedule {
-            background-color: #f44336; /* Red */
+            background-color: #f44336; 
             color: white;
         }
 
         .manage-staff-schedule {
-            background-color: #FFC107; /* Yellow */
+            background-color: #FFC107;
             color: white;
+        }
+
+        .manage-department {
+            background-color: brown;
+            color: white;
+
         }
 
         .button:hover {
@@ -67,6 +73,7 @@
 
     <div class="container">
         <h1>Admin Management Dashboard</h1>
+        <a class="button manage-department" href="/Department/GetAllDepartments">Manage Department</a>
         <a class="button manage-patients" href="/Patient/GetAllPatients">Manage Patients</a>
         <a class="button manage-staff" href="/Staff/Index">Manage Staff</a>
         <a class="button manage-schedule" href="/Schedule/Index">Manage Schedule</a>
