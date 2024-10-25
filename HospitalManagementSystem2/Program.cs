@@ -4,7 +4,7 @@ using HospitalManagementSystem2.Repository.Interfaces;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using HospitalManagementSystem2.Data;
+
 
 namespace HospitalManagementSystem2
 {
